@@ -31,8 +31,7 @@ public class MainActivity extends AppCompatActivity {
         Product product = new Product(productBox.getText().toString(), sku);
 
         // TODO: add to database
-        MyDBHandler dbHandler = new MyDBHandler(this);
-        dbHandler.addProduct(product);
+        
 
         productBox.setText("");
 
@@ -45,8 +44,7 @@ public class MainActivity extends AppCompatActivity {
 
         // TODO: get from Database
         Product product = null;
-        MyDBHandler dbHandler = new MyDBHandler(this);
-        product = dbHandler.findProduct(productBox.getText().toString());
+        
 //        Product product = dbHandler.find
 
         if (product != null) {
